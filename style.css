@@ -1,0 +1,41 @@
+body{
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 2fr 10fr;
+}
+img{
+    height: 20px;
+    width: auto;
+    color: white;
+}
+div{
+    border: 2px dashed black;
+}
+
+#sidebar{
+    grid-column: minmax(150px / 1fr);
+    margin: 0%;
+    grid-row: 1 / 10;
+    height: 100vh;
+}
+#sidebar span {
+    justify-items: center;
+    align-items: center;
+    display: block;
+    margin: 2em 3em;
+}
+#sidebar span p{
+    display: block;
+}
+
+#header{
+    grid-row: 1/4;
+    grid-column: 2/6;
+    height: 30vh;
+}
+#main{
+    height: 70vh;
+    grid-row: 4/10;
+    grid-column:2 /6;
+}
