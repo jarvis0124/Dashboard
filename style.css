@@ -7,7 +7,8 @@ body{
     grid-template-rows: 2fr 10fr;
 }
 img{
-    height: 20px;
+    margin-right: 70px;
+    height: 25px;
     width: auto;
     color: white;
 }
@@ -20,10 +21,51 @@ div{
     grid-column: 1/2;
     grid-row: 1 / 10;
     height: 100vh;
+    background-color: #0b84ba;
 }
-#sidebar span *{
-    display: block;
 
+#sidebar button{
+    display: flex;
+    justify-content: flex-start;
+    margin:7px 0;
+    height: 5vh;
+    text-align: center;
+    align-items: center;
+    background-color: #0b84ba;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0;
+}
+
+#sidebar button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+
+#dash_one, #dash_two{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+#sidebar .dashboard{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0% 0%;
+    width: auto;
+    height: 12vh;
+    font-size: 25px;
+}
+
+#sidebar .dashboard img{
+margin: 1.1em;
+height: 50px;
 }
 
 
@@ -37,3 +79,4 @@ div{
     grid-row: 4/10;
     grid-column:2 /7;
 }
+
