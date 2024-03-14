@@ -1,5 +1,7 @@
+
 body{
     margin: 0%;
+    font-family:Roboto,sans-serif;
 }
 #container{
     display: grid;
@@ -11,9 +13,6 @@ img{
     height: 25px;
     width: auto;
     color: white;
-}
-div{
-    border: 2px dashed black;
 }
 
 #sidebar{
@@ -147,19 +146,78 @@ height: 50px;
     border-radius: 3px;
     border: none;
 }
-
+#header-bottom part button:hover{
+    color: #1992d4;
+    background-color: #fff;
+}
 #main{
+    display: grid;
     grid-row: 4/10;
     grid-column:2/7;
-    display: grid;
-    grid-template-columns: 6fr 1.5fr;
+    grid-template-columns: 7fr 1fr;
+    margin-bottom: 0%;
+    background-color: #e2e8f0;
+}
+
+
+#main .cards{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 25em;
+    padding: 3px;
+    height: 18em;
+}
+
+.card_btns{
+    display: flex;
+    width: fit-content;
+    align-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 5px;
 }
 
 .left_menu{
-    display: grid;
-    grid-column: 1/2;
+    grid-row: 1/10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left_menu .menu_top{
+    width: 100%;
+    height: fit-content;
+    display: block;
 }
 .right_menu{
     display: grid;
     grid-column: 2/3;
+    grid-row: 1/10;
+    text-align: center;
+}
+
+.top_right{
+    display: grid;
+    grid-row: 1/5;
+    gap: 1px;
+}
+
+.bottom_right{
+    display: grid;
+    grid-row: 6/10;
+    gap: 1.2px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.bottom_right a{
+    padding: 2.5px;
+    margin: 1.2px
+}
+
+.cards, .news{
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #fff;
 }
