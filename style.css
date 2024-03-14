@@ -20,7 +20,6 @@ div{
     display: grid;
     grid-column: 1/2;
     grid-row: 1 / 10;
-    height: 100vh;
     background-color: #0b84ba;
 }
 
@@ -42,7 +41,6 @@ div{
     background-color: white;
     color: black;
     cursor: pointer;
-
 }
 
 #dash_one, #dash_two{
@@ -74,8 +72,8 @@ height: 50px;
     grid-column: 2/7;
 }
 #header img{
-    width: 60px;
-    height: 40px;
+    width: 50px;
+    height: 30px;
     margin: auto 12px auto 10px
 
 }
@@ -83,8 +81,8 @@ height: 50px;
 #header-top, #header-bottom{
     display:grid;
     width: 100%;
-    height: fit-content;
-    margin:5px auto;
+    margin: 1.5px auto;
+    padding: 0% auto;
 }
 
 #header-top  part:nth-child(1){
@@ -108,10 +106,11 @@ height: 50px;
     grid-column: 5/6;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 3.5px;
 }
 
 #header part{
-    margin: 15px 0%;
+    margin: 9px 0%;
     padding: 0%;
     display: flex;
     flex-direction: row;
@@ -129,7 +128,7 @@ height: 50px;
 
 #header-top input{
     width:90%;
-    height: 2.5vh;
+    height: 2.2vh;
     align-self: center;
     border-radius: 5px;
     border: none;
@@ -139,7 +138,8 @@ height: 50px;
 #header-bottom part button{
     align-self: center;
     font-weight: 500;
-    width:5vw;
+    width:max-content;
+    padding: 5px;
     height: 3vh;
     color: white;
     font-weight: 800;
@@ -150,6 +150,16 @@ height: 50px;
 
 #main{
     grid-row: 4/10;
-    grid-column:2 /7;
+    grid-column:2/7;
+    display: grid;
+    grid-template-columns: 6fr 1.5fr;
 }
 
+.left_menu{
+    display: grid;
+    grid-column: 1/2;
+}
+.right_menu{
+    display: grid;
+    grid-column: 2/3;
+}
