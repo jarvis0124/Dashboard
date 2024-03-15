@@ -7,6 +7,8 @@ body{
     display: grid;
     grid-template-columns: 1fr 7fr;
     grid-template-rows: 2fr 10fr;
+    height: auto;
+    width: auto;
 }
 img{
     margin: auto 50px auto 5px;
@@ -169,6 +171,9 @@ height: 50px;
     padding: 3px;
     height: 18em;
 }
+.cards h4{
+    margin-bottom:0% ;
+}
 
 .card_btns{
     display: flex;
@@ -176,6 +181,9 @@ height: 50px;
     align-self: flex-end;
     margin-top: auto;
     margin-bottom: 5px;
+}
+.card_btns img:hover{
+    transform: scale(1.5);
 }
 
 .left_menu{
@@ -210,6 +218,7 @@ height: 50px;
     margin: 5px;
     border-radius: 5px;
     background-color: #fff;
+    row-gap: 4px;
 }
 .bottom_right a{
     padding: 2.5px;
